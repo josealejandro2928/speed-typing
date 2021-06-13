@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:site_name" content="Speed Typing">
+    <meta property="og:title" content="Speed Typing">
+    <meta property="og:author" content="Jose Alejandro Concepción Alvarez">
+    <meta property="og:description" content="Simple Vanilla JavaScript app for improve our speed typing">
+    <meta property="og:image" content="http://movie-seat-booking-js.surge.sh/share.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    <meta property="og:url" content="http://movie-seat-booking-js.surge.sh/">
+</head>
+
+<body>
+    <div class="setting-container">
+        <form>
+            <div class="dificulty-container">
+                <label for="dificulty" style="margin-right: 8px;">Dificulty:</label>
+                <select name="dificulty" id="dificulty">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <h1 style="margin: 0px;">Speed Typer</h1>
+
+        <small style="display: block; margin-top: 60px;">Type the following:
+        </small>
+        <h2 id="word"></h2>
+
+        <input type="text" placeholder="Type the word here" autocomplete="off">
+
+        <p class="time-left">Time left: <span id="time-left">10s</span></p>
+        <p class="score">Score: <span id="score">0</span></p>
+
+        <div class="endGame">
+
+        </div>
+
+
+    </div>
+    <button class="btn" id="setting-btn">setting</button>
+    <script src="./script.js"></script>
+</body>
+
+</html>
